@@ -1,6 +1,7 @@
 package org.example.Model;
 
 public class CalculatorModel {
+    // Set functions for every algorithm
     public double add(double x, double y){
         return x+y;
     }
@@ -11,6 +12,7 @@ public class CalculatorModel {
         return x*y;
     }
     public double divide(double x, double y) throws ArithmeticException {
+        // Can not divide into 0
         if (y==0){
             throw new ArithmeticException("Деление на ноль");
         }
