@@ -8,7 +8,7 @@ public class CalculatorView extends JFrame {
     private final JTextField firstnum = new JTextField(10);
     private final JTextField secondnum = new JTextField(10);
     private final JButton addition = new JButton("+");
-    private final JButton substraction = new JButton("-");
+    private final JButton subtraction = new JButton("-");
     private final JButton multiplication = new JButton("*");
     private final JButton division = new JButton("/");
     private final JLabel resultLabel = new JLabel("Результат: ");
@@ -27,7 +27,7 @@ public class CalculatorView extends JFrame {
         // Panel with operation buttons
         JPanel buttonsPanel = new JPanel();
         buttonsPanel.add(addition);
-        buttonsPanel.add(substraction);
+        buttonsPanel.add(subtraction);
         buttonsPanel.add(multiplication);
         buttonsPanel.add(division);
         add(buttonsPanel);
@@ -51,7 +51,7 @@ public class CalculatorView extends JFrame {
     }
     public void addOperationListener(ActionListener listener) {
         addition.addActionListener(listener);
-        substraction.addActionListener(listener);
+        subtraction.addActionListener(listener);
         multiplication.addActionListener(listener);
         division.addActionListener(listener);
     }
